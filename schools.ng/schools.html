@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="vendor/aos/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Schools In Nigeria</title>
+</head>
+<body>
+    <!--Header -->
+    <header>
+        <nav class="navbar navbar-light navbar-expand-md fixed-top mb-5">
+            <div class="container">
+                <a class="navbar-brand" href="#">Schools.ng</a>
+                <form class="d-flex">
+                    <input class="search-bar me-2" type="search" placeholder="Search schools, teachers, publishers..." aria-label="Search">
+                    <button class="search-btn" type="submit"><i class="ion-ios-search"></i></button>
+                </form>
+                <ul class="navbar-nav expand-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="schools.html">Schools</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="teachers.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Teachers </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">Mathematics</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="teachers.html">All Teachers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
+                    <span class="ion-ios-menu"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Schools.ng</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html"><i class="ion-ios-home"></i> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="schools.html"><i class="ion-ios-school"></i> Schools</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="teachers.html" id="offcanvasNavbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="ion-ios-people"></i> Teachers
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Mathematics</a></li>
+                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="teachers.html">All Teachers</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html"><i class="ion-ios-school"></i> About Us</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search schools" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!---------Schools------------>
+
+    <section class="container-fluid">
+        <div class="section-title">
+            <h2>Schools in Nigeria </h2>
+        </div>
+        <div class="row">   
+          <!-- Filter-->
+          <div class="filter col-lg-3 order-2 order-lg-1">
+            <h2 class="h3 mb-4 pb-1">Filter</h2>
+            <form action="#">
+              <div class="filter-card border-0 shadow-sm mb-4 p-2">
+                <div class="card-body">
+                  <h2 class="h5 mb-4">Choose category</h2>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheck1" type="checkbox" checked>
+                    <label class="custom-control-label" for="customCheck1">Marketing</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheck2" type="checkbox" checked>
+                    <label class="custom-control-label" for="customCheck2">Idea generation</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheck3" type="checkbox">
+                    <label class="custom-control-label" for="customCheck3">Design</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheck4" type="checkbox">
+                    <label class="custom-control-label" for="customCheck4">Naming</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheck5" type="checkbox">
+                    <label class="custom-control-label" for="customCheck5">Domain names</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheck6" type="checkbox">
+                    <label class="custom-control-label" for="customCheck6">Sales</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheck7" type="checkbox">
+                    <label class="custom-control-label" for="customCheck7">Finance</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheck8" type="checkbox">
+                    <label class="custom-control-label" for="customCheck8">Project management</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheck9" type="checkbox">
+                    <label class="custom-control-label" for="customCheck9">Hosting</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheck10" type="checkbox">
+                    <label class="custom-control-label" for="customCheck10">Forms & Surveys</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheck11" type="checkbox">
+                    <label class="custom-control-label" for="customCheck11">Social tools</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheck12" type="checkbox">
+                    <label class="custom-control-label" for="customCheck12">MVP</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheck13" type="checkbox">
+                    <label class="custom-control-label" for="customCheck13">Early users</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheck14" type="checkbox">
+                    <label class="custom-control-label" for="customCheck14">Product demo</label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-card border-0 shadow-sm mb-4 p-2">
+                <div class="card-body">
+                  <h2 class="h5 mb-4">Choose tag</h2>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheckbox1" type="checkbox">
+                    <label class="custom-control-label" for="customCheckbox1">Startup</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheckbox2" type="checkbox">
+                    <label class="custom-control-label" for="customCheckbox2">Development</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheckbox3" type="checkbox">
+                    <label class="custom-control-label" for="customCheckbox3">Management</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheckbox4" type="checkbox">
+                    <label class="custom-control-label" for="customCheckbox4">Resources</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheckbox5" type="checkbox">
+                    <label class="custom-control-label" for="customCheckbox5">Engagement</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheckbox6" type="checkbox">
+                    <label class="custom-control-label" for="customCheckbox6">Planning</label>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-2">
+                    <input class="custom-control-input" id="customCheckbox7" type="checkbox">
+                    <label class="custom-control-label" for="customCheckbox7">Community</label>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-block" type="submit"> <i class="ion-ios-search mr-2 small"></i> Search</button>
+            </form>
+          </div>
+          <!-- Listing-->
+          <div class="col-lg-9 mb-5 mb-lg-0 order-1 order-lg-2">
+            <!-- Listing sorting-->
+            <div class="row mb-4 align-items-center">
+              <div class="col-md-7">
+                <ul class="list-inline mb-0">
+                  <li class="list-inline-item my-1 my-lg-0">
+                    <select class="selectpicker form-control" name="sort" data-style="btn btn-light shadow-xs bg-white border" data-title="Sort By" data-width="180">
+                      <option value="alphapitcally">Alphapitcally</option>
+                      <option value="latest">Latest</option>
+                      <option value="top-rated">Top rated</option>
+                      <option value="random">Random</option>
+                    </select>
+                  </li>
+                  <li class="list-inline-item my-1 my-lg-0">
+                    <select class="selectpicker form-control" name="type" data-style="btn btn-light shadow-xs bg-white border" data-width="180">
+                      <option value="tools">Tools</option>
+                      <option value="resources">Resources</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+              <!-------------FILTER END---------------->
+            <div class="col-sm-6 col-lg-6 mb-5">
+                <div class="school-item container-fluid">
+                    <div class="row">
+                        <div class="name">
+                            <h2>Abeokuta Grammar School</h2>
+                        </div>
+                        <img src="images/matt-ragland-02z1I7gv4ao-unsplash.jpg" alt="Image" class="col-lg-6 img-fluid">
+                        <div class="col-lg-6 pt-3">
+                        <ul class="properties">
+                        <li><i class="icon ion-ios-person"></i> 5000 students</li>
+                        <li><i class="icon ion-ios-people"></i> 450 teachers</li>
+                        <!-- <li><i class="icon ion-ios-"></i> Well facilitated labs</li> -->
+                        <li><i class="icon ion-ios-globe"></i> Visit website</li>
+                        <li><i class="icon ion-ios-contact"></i> Contact</li>
+                        <li><a href="school_details.html">click to see  more</a></li>
+                        </ul></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-6 mb-5">
+                <div class="school-item container-fluid">
+                    <div class="row">
+                        <div class="name">
+                            <h2>Excel Kiddz Foundation</h2>
+                        </div>
+                        <img src="images/matt-ragland-02z1I7gv4ao-unsplash.jpg" alt="Image" class="col-lg-6 img-fluid">
+                        <div class="col-lg-6 pt-3">
+                            <ul class="properties">
+                                <li><i class="icon ion-ios-person"></i> 5000 students</li>
+                                <li><i class="icon ion-ios-people"></i> 450 teachers</li>
+                                <!-- <li><i class="icon ion-ios-"></i> Well facilitated labs</li> -->
+                                <li><i class="icon ion-ios-globe"></i> Visit website</li>
+                                <li><i class="icon ion-ios-contact"></i> Contact</li>
+                                <li><a href="school_details.html">click to see more</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/aos/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
