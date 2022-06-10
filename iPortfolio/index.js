@@ -1,6 +1,6 @@
 function sendEmail() {
   Username = "oluwadarasimiweb@gmail.com";
-  Password = "portfolio123!";
+  Password = "";
   To = "okeniyidarasimi123@gmail.com";
   From = document.getElementById("email").value;
   Subject = document.getElementById("subject").value;
